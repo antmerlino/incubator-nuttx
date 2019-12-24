@@ -35,7 +35,6 @@ Before a contribution is accepted it must pass all Acceptance Criteria. While th
 
 [PUT LIST OF PRE-SCREENING STEPS HERE THAT HELP THE CONTRIBUTOR CHECK FOR COMPLIANCE WITH THE ACCEPTANCE CRITERIA. For example, nxstyle checks]
 
-While we hope Contributors can do most of the legwork up front to check for compliance, the community will help bring contributions into compliance so that they can be included in the project.
 
 # Submitting a Contribution
 
