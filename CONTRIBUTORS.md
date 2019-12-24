@@ -58,7 +58,7 @@ Contributions can be submitted in the following ways:
 
 **How to create a Pull Request**
 
-# Criteria For Acceptance
+# Acceptance Criteria
 
 1. Does the contribution violate any of the Inviolables? [Add link]
 2. Does the contribution follow the Coding Standard? [Add link]
