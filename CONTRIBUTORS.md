@@ -31,7 +31,7 @@ If you have your own work that has led to a bug-fix, improvement, or feature, an
 
 # Pre-screening a Contribution
 
-Before a contribution is accepted it must pass all Acceptance Criteria. While the community will help bring contributions into compliance, it saves everyone time if the Contributor does some of the pre-screening before submitting a contribution.
+Before a contribution is accepted it must pass all Acceptance Criteria. We urge Contributors to make best effort into bringing their contributions into compliance. This helps the community grow in the Apache Way. But the Community is here to help! Reach out on the dev list and someone will assist!
 
 [PUT LIST OF PRE-SCREENING STEPS HERE THAT HELP THE CONTRIBUTOR CHECK FOR COMPLIANCE WITH THE ACCEPTANCE CRITERIA. For example, nxstyle checks]
 
