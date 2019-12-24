@@ -27,7 +27,7 @@ If you are a complete beginner to Apache NuttX, please refer to our Getting Star
 
 If you are interested in contributing to the project, but are unsure how to help, please check out our Issues [Add link] page, or reach out on the mailing list (dev@nuttx.apache.org).
 
-If you have your own work that has led to a bug-fix, improvement, or feature, and you would like to submit it to the community, please follow the rest of this guide to get your Contribution integrated into the project
+Follow the steps below for how to contribute to Apache NuttX. We welcome you to our community of volunteers [Add link to Apache Way] and look forward to your contributions.
 
 # Pre-screening a Contribution
 
