@@ -62,6 +62,7 @@ Contributions can be submitted in the following ways:
 
 1. Does the contribution violate any of the Inviolables? [Add link]
 2. Does the contribution follow the Coding Standard? [Add link]
+3. Does the contribution follow the Licencing Requirements [Add link]?
 3. Does the contribution follow Good Architectural Principles? [Add link]
 4. Does the contribution build and pass testing?
 5. Does the contribution meet all Area Specific Criteria? [Add link] 
