@@ -23,7 +23,7 @@ Note: The term 'Community' is intentionally used to highlight that Contributors,
 
 # Developing a Contribution
 
-If you are a complete beginner to Apache NuttX, please refer to our Getting Started Guide [Add link]. This will help you get up and running with the stock project.
+If you are a complete beginner to Apache NuttX, please refer to our Getting Started Guide [Add link]. This will help you get up and running with the Apache NuttX repositories.
 
 If you are interested in contributing to the project, please join our mailing list (dev@nuttx.apache.org) and check out our Issues [Add link] page for things you are interested in helping with.
 
