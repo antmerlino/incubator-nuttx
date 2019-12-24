@@ -25,7 +25,7 @@ Note: The term 'Community' is intentionally used to highlight that Contributors,
 
 If you are a complete beginner to Apache NuttX, please refer to our Getting Started Guide [Add link]. This will help you get up and running with the stock project.
 
-If you are interested in contributing to the project, but are unsure how to help, please check out our Issues [Add link] page, or reach out on the mailing list (dev@nuttx.apache.org).
+If you are interested in contributing to the project, please join our mailing list (dev@nuttx.apache.org) and check out our Issues [Add link] page for things you are interested in helping with.
 
 Follow the steps below for how to contribute to Apache NuttX. We welcome you to our community of volunteers [Add link to Apache Way] and look forward to your contributions.
 
