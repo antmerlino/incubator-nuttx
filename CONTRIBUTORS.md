@@ -9,7 +9,12 @@
 7. Rationale
 
 # Overview
-
+## Definitions
+**Contributor** -  
+**Contribution** - 
+**Committer** -
+**PPMC** -
+**Community** -
 The life-cycle of a contribution is as follows:
 
 1. Contributor improves or expands the code-base and wants to contribute the change to the community project.
