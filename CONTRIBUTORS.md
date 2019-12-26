@@ -1,20 +1,21 @@
 # Outline
 
 1. Overview
-2. Developing a Contribution
-3. Pre-screening a Contribution
-4. Submitting a Contribution
-5. Acceptance Criteria
-6. From Contribution to Commit
-7. Rationale
+1. Developing a Contribution
+1. Pre-screening a Contribution
+1. Submitting a Contribution
+1. Acceptance Criteria
+1. From Contribution to Commit
+1. Rationale
 
 # Overview
 ## Definitions
-**Contributor** -  
-**Contribution** - 
-**Committer** -
-**PPMC** -
-**Community** -
+* **Contributor** -  
+* **Contribution** - 
+* **Committer** -
+* **PPMC** -
+* **Community** -
+
 The life-cycle of a contribution is as follows:
 
 1. Contributor improves or expands the code-base and wants to contribute the change to the community project.
