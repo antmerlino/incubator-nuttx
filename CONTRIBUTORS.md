@@ -1,12 +1,12 @@
 # Outline
 
 1. Overview
-1. Developing a Contribution
-1. Pre-screening a Contribution
-1. Submitting a Contribution
-1. Acceptance Criteria
-1. From Contribution to Commit
-1. Rationale
+2. Developing a Contribution
+3. Pre-screening a Contribution
+4. Submitting a Contribution
+5. Acceptance Criteria
+6. From Contribution to Commit
+7. Rationale
 
 # Overview
 ## Definitions
