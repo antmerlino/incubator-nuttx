@@ -121,30 +121,6 @@ EXTERN const pthread_attr_t g_default_pthread_attr;
  * Public Function Prototypes
  ****************************************************************************/
 
-/****************************************************************************
- * Name:  nx_pthread_create
- *
- * Description:
- *   This function creates and activates a new thread with a specified
- *   attributes.
- *
- * Input Parameters:
- *    trampoline
- *    thread
- *    attr
- *    pthread_entry
- *    arg
- *
- * Returned Value:
- *   OK (0) on success; a (non-negated) errno value on failure. The errno
- *   variable is not set.
- *
- ****************************************************************************/
-
-int nx_pthread_create(pthread_trampoline_t trampoline, FAR pthread_t *thread,
-                      FAR const pthread_attr_t *attr,
-                      pthread_startroutine_t entry, pthread_addr_t arg);
-
 #undef EXTERN
 #ifdef __cplusplus
 }

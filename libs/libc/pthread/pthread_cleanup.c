@@ -1,5 +1,5 @@
 /****************************************************************************
- * sched/pthread/pthread_cleanup.c
+ * libs/libc/pthread/pthread_cleanup.c
  *
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -27,10 +27,7 @@
 #include <pthread.h>
 #include <sched.h>
 
-#include <nuttx/sched.h>
-
-#include "sched/sched.h"
-#include "pthread/pthread.h"
+#define CONFIG_PTHREAD_CLEANUP
 
 #ifdef CONFIG_PTHREAD_CLEANUP
 

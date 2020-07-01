@@ -1,5 +1,5 @@
 /****************************************************************************
- * libs/libc/pthread/pthread_create.c
+ * libs/libc/pthread/pthread_exit.c
  *
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -24,69 +24,36 @@
 
 #include <nuttx/config.h>
 
-#include <debug.h>
-#include <assert.h>
-
-#include <pthread.h>
+#include <nuttx/pthread.h>
 
 /****************************************************************************
  * Private Functions
  ****************************************************************************/
 
 /****************************************************************************
- * Name: pthread_startup
- *
- * Description:
- *   This function is the user space pthread startup function.  Its purpose
- *   is to catch the return from the pthread main function so that
- *   pthread_exit() can be called from user space
- *
- * Input Parameters:
- *   entry - The user-space address of the pthread entry point
- *   arg   - Standard argument for the pthread entry point
- *
- * Returned Value:
- *   None.  This function does not return.
- *
- ****************************************************************************/
-
-static void pthread_startup(pthread_startroutine_t entry,
-                            pthread_addr_t arg)
-{
-  DEBUGASSERT(entry != NULL);
-
-  /* Pass control to the thread entry point.  Handle any returned value. */
-
-  pthread_exit(entry(arg));
-}
-
-/****************************************************************************
  * Public Functions
  ****************************************************************************/
 
 /****************************************************************************
- * Name:  pthread_create
+ * Name:  pthread_exit
  *
  * Description:
- *   This function creates and activates a new thread with specified
- *   attributes.  It is simply a wrapper around the nx_pthread_create system
- *   call.
+ *   Terminate execution of a thread started with pthread_create.
  *
  * Input Parameters:
- *    thread
- *    attr
- *    pthread_entry
- *    arg
  *
  * Returned Value:
- *   OK (0) on success; a (non-negated) errno value on failure. The errno
- *   variable is not set.
  *
  ****************************************************************************/
 
-int pthread_create(FAR pthread_t *thread, FAR const pthread_attr_t *attr,
-                   pthread_startroutine_t pthread_entry, pthread_addr_t arg)
+void pthread_exit(void)
 {
-  return nx_pthread_create(pthread_startup, thread, attr, pthread_entry,
-                           arg);
+#ifdef CONFIG_PTHREAD_CLEANUP
+  /* Perform any stack pthread clean-up callbacks */
+
+  pthread_cleanup_popall(tcb);
+#endif
+
+  return nx_pthread_exit(NULL);
 }
+

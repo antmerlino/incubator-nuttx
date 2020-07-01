@@ -38,7 +38,7 @@ CSRCS += pthread_barrierattr_getpshared.c pthread_barrierattr_setpshared.c
 CSRCS += pthread_barrierinit.c pthread_barrierdestroy.c pthread_barrierwait.c
 CSRCS += pthread_condattr_init.c pthread_condattr_destroy.c
 CSRCS += pthread_condinit.c pthread_conddestroy.c
-CSRCS += pthread_create.c
+CSRCS += pthread_create.c pthread_exit.c 
 CSRCS += pthread_get_stackaddr_np.c pthread_get_stacksize_np.c
 CSRCS += pthread_mutexattr_init.c pthread_mutexattr_destroy.c
 CSRCS += pthread_mutexattr_getpshared.c pthread_mutexattr_setpshared.c
@@ -57,6 +57,10 @@ endif
 
 ifeq ($(CONFIG_PTHREAD_SPINLOCKS),y)
 CSRCS += pthread_spinlock.c
+endif
+
+ifeq ($(CONFIG_PTHREAD_CLEANUP),y)
+CSRCS += pthread_cleanup.c
 endif
 
 endif # CONFIG_DISABLE_PTHREAD

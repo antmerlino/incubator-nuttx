@@ -481,8 +481,9 @@ ssize_t pthread_get_stacksize_np(pthread_t thread);
  * about the kind of thread being created.
  */
 
-int pthread_create(FAR pthread_t *thread, FAR const pthread_attr_t *attr,
-                   pthread_startroutine_t startroutine, pthread_addr_t arg);
+int nx_pthread_create(pthread_trampoline_t trampoline, FAR pthread_t *thread,
+                      FAR const pthread_attr_t *attr,
+                      pthread_startroutine_t entry, pthread_addr_t arg);
 
 /* A thread object may be "detached" to specify that the return value and
  * completion status will not be requested.
